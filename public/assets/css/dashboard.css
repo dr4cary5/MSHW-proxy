@@ -1,1 +1,28 @@
-
+:root { --bg: #f8f9fa; --card: #ffffff; --primary: #007bff; --text: #212529; --border: #dee2e6; }
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.5; }
+header { background: var(--primary); color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+header h1 { margin: 0; font-size: 1.5rem; }
+.status .badge { background: rgba(255,255,255,0.2); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem; margin-left: 0.5rem; }
+main { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; display: grid; gap: 1.5rem; }
+.card { background: var(--card); border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.card h2 { margin-top: 0; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+.toolbar { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+button { background: var(--primary); color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-size: 0.9rem; }
+button:hover { opacity: 0.9; }
+.cookie-list { max-height: 400px; overflow-y: auto; }
+.cookie-group { margin-bottom: 1rem; }
+.cookie-group h3 { font-size: 1rem; color: #555; margin: 0.5rem 0; }
+.cookie-item { background: #f8f9fa; border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; margin-bottom: 0.5rem; }
+.cookie-header { display: flex; justify-content: space-between; align-items: center; }
+.cookie-header .actions button { padding: 0.25rem 0.5rem; font-size: 0.8rem; margin-left: 0.25rem; background: #6c757d; }
+.cookie-details code { display: block; background: #e9ecef; padding: 0.25rem; border-radius: 4px; margin: 0.5rem 0; word-break: break-all; }
+.log-console { background: #1e1e1e; color: #00ff00; font-family: monospace; padding: 1rem; border-radius: 6px; height: 200px; overflow-y: auto; font-size: 0.85rem; }
+.actions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.75rem; }
+dialog { border: none; border-radius: 8px; padding: 2rem; box-shadow: 0 10px 25px rgba(0,0,0,0.2); width: 90%; max-width: 500px; }
+dialog::backdrop { background: rgba(0,0,0,0.4); }
+dialog form { display: flex; flex-direction: column; gap: 0.75rem; }
+dialog label { display: flex; flex-direction: column; gap: 0.25rem; font-weight: 500; }
+dialog input, dialog textarea, dialog select { padding: 0.5rem; border: 1px solid var(--border); border-radius: 4px; font-size: 1rem; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1rem; }
+.modal-actions button[value="cancel"] { background: #6c757d; }
